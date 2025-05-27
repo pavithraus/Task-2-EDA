@@ -56,6 +56,8 @@ Most passengers were in 3rd class.
 - Majority of passengers were aged 20–40.
 - Age distribution is slightly right-skewed.
 - There are several children and elderly.
+- ![Age distribution](https://github.com/user-attachments/assets/bb4935b4-028e-4cac-bd73-ca7df6cd7409)
+
 
 ####  Fare Distribution
 - Fare is highly right-skewed.
@@ -76,10 +78,14 @@ Most passengers were in 3rd class.
 #### Age by Survival
 - Survivors tend to be slightly younger.
 - More non-survivors are seen in the middle-aged group.
+- ![Age Distribution by survival](https://github.com/user-attachments/assets/6fce846a-824b-4553-8d32-642a5db4e093)
+
 
 #### Fare by Survival
 - Survivors generally paid higher fares.
 - Indicates wealth/class could have impacted survival.
+- ![Fare distribution by survival](https://github.com/user-attachments/assets/fb4cec55-7bf6-460f-a663-caeb75bea07b)
+
 
 ###  > Grouped Survival Rates (Categorical)
 
