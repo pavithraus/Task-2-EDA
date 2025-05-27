@@ -8,12 +8,16 @@ Objective: Visually and statistically explore the Titanic dataset to uncover pat
 
 ## Project Contents
 
-- `Titanic-Dataset.csv` — Original dataset  
-- `task2_EDA.py` — Python script for all preprocessing + visualizations  
-- `images/` — Folder containing all visual plots  
+- `Titanic.csv` — Original dataset  
+- `Visualization-statistics.py` — Python script for all preprocessing + visualizations  
+- `output-image/` — Folder containing all visual plots  
 - `README.md` — This documentation  
 
 ---
+
+## Resources used
+
+Dataset-Titanic.csv
 
 ## Tools Used
 
@@ -38,7 +42,7 @@ Objective: Visually and statistically explore the Titanic dataset to uncover pat
 
 ## Exploratory Data Analysis (EDA)
 
-###  1. Basic Distributions
+###  > Basic Distributions
 
 #### Survival Count
 Most passengers did not survive (label = 0).
@@ -46,7 +50,7 @@ Most passengers did not survive (label = 0).
 ####  Passenger Class Count
 Most passengers were in 3rd class.
 
-###  2. Univariate Numeric Distributions
+###  > Univariate Numeric Distributions
 
 ####  Age Distribution
 - Majority of passengers were aged 20–40.
@@ -61,13 +65,13 @@ Most passengers were in 3rd class.
 - Most passengers were either alone or had small family sizes.
 - Medium family sizes (3–4) are relatively rare but important.
 
-###  3. Boxplots (Outlier Detection)
+###  > Boxplots (Outlier Detection)
 
 - Fare has extreme outliers beyond 300.
 - Age and FamilySize distributions show mild outliers.
 - Boxplots help reveal potential anomalies and distribution spread.
 
-###  4. Bivariate Analysis – Survival vs Features
+###  > Bivariate Analysis – Survival vs Features
 
 #### Age by Survival
 - Survivors tend to be slightly younger.
@@ -77,41 +81,55 @@ Most passengers were in 3rd class.
 - Survivors generally paid higher fares.
 - Indicates wealth/class could have impacted survival.
 
-###  5. Grouped Survival Rates (Categorical)
+###  > Grouped Survival Rates (Categorical)
 
 #### By Sex
 - Females had much higher survival rates.
+- ![Survival Rate by sex](https://github.com/user-attachments/assets/03b681db-af5c-42b7-9fdd-acda2cd3f516)
+
 
 #### By Pclass
 - 1st class passengers survived more.
 - 3rd class had the lowest survival.
+- ![Survival rate by passenger calss](https://github.com/user-attachments/assets/d131574e-ead2-4651-849d-a48d07a0fd34)
+
 
 #### By Embarked
 - Port 'C' (Cherbourg) had the best survival outcomes.
 - Most people embarked from 'S', but survival was lower there.
+- ![Survival rate by embarked port](https://github.com/user-attachments/assets/9b3d1437-695f-45f5-9586-7f96fd334b41)
+
 
 #### By Family Size
 - Passengers with 3–4 family members had the highest survival rate.
 - Large families and solo travelers had worse outcomes.
+- ![Survival Rate by family size](https://github.com/user-attachments/assets/cc3453d5-df1a-42a0-b766-8b382373961b)
+
 
 #### By Title
 - Miss, Mrs, and Master had better survival rates.
 - Rare titles (military or nobility) had poor survival rates.
+- ![survival rate by Title](https://github.com/user-attachments/assets/ddca481f-6c29-4e45-9822-62ec9dc10e86)
 
-###  6. Feature Relationships
+
+###  > Feature Relationships
 
 #### Correlation Heatmap
 - Fare positively correlated with survival.
 - Pclass negatively correlated (as class increases numerically, survival drops).
 - FamilySize has low but slightly negative correlation.
+- ![Correlation Matrix](https://github.com/user-attachments/assets/6bbd2e07-f10e-402c-b835-8caf20b88c64)
+
 
 #### Pairplot
 - Shows separability in Fare and Age between survivors and non-survivors.
 - Highlights potential feature importance for modeling.
+- ![Pairplot of Numeric Features by Survival](https://github.com/user-attachments/assets/9e24668b-ffc2-44cc-a505-af223d622d9c)
+
 
 ---
 
-##  Key Insights, Patterns & Anomalies
+##-----------------------------------------Key Insights, Patterns & Anomalies-------------------------------------
 
 ###  Insights
 - Females, younger passengers, and 1st class travelers had the highest survival.
